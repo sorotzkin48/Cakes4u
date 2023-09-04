@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="../css_folder/form.css">
+    <link rel="stylesheet" href="../css_folder/media.css">
+</head>
+
+<body id="form">
+    <header>
+        <nav class="nav">
+            <a href="./main.html">Home</a>
+            <a href="./babies.html">Babies</a>
+            <a href="./birthdays.html">Birthdays</a>
+            <a href="./bar-mitzvas.html">Bar-Mitzvas</a>
+            <a href="./engagements.html">Engagements</a>
+            <a href="./festivals.html">Festivals</a>
+            <a href="./misc.html">Miscellaneous</a>
+        </nav>
+    </header>
+    <form>
+        <fieldset>
+            <legend>My order</legend>
+            <section class="list_of_inputs">
+                <div class="title">Full Name</div>
+                <div class="inline input">
+                    <input id="first name" type="text" placeholder="first_name" class="visible_ph" />
+                    <input id="last name" type="text" placeholder="last_name" class="visible_ph" />
+                </div>
+                <div class="inline double_label">
+                    <div>
+                        <label for=" first name" class="invisible_label">First Name</label>
+                    </div>
+                    <div>
+                        <label for=" last name" class="invisible_label">Last Name</label>
+                    </div>
+                </div>
+            </section>
+            <section class="list_of_inputs">
+                <div class="title">Address</div>
+                <div class="inline input">
+                    <input id="street" type="text" placeholder="street" class="visible_ph" />
+                    <input id="number" type="number" placeholder="number" class="visible_ph" />
+                    <input id="city" type="text" placeholder="city" class="visible_ph" />
+                </div>
+
+                <div class="inline triple_label">
+                    <label for="street" class="invisible_label">Street</label>
+                    <label for="number" class="invisible_label">Number</label>
+                    <label for="city" class="invisible_label">City</label>
+                </div>
+            </section>
+            <section class="list_of_inputs">
+                <div class="title">Contact Information</div>
+                <div class="inline input">
+                    <input id="phone-number" type="tel" placeholder="phone-number" class="visible_ph" />
+                    <input id="e-mail" type="email" placeholder="e-mail" class="visible_ph" />
+                </div>
+                <div class="inline double_label">
+                    <label for="phone-number" class="invisible_label">phone-number</label>
+                    <label for="e-mail" class="invisible_label">E-mail</label>
+                </div>
+            </section>
+            <section>
+                <label for="question" class="title">How did you hear about us?</label>
+                <select name="question" id="question">
+                    <option value=""></option>
+                    <option value="">Newspaper</option>
+                    <option value="">Internet</option>
+                    <option value="">Magazine</option>
+                    <option value="">Friends</option>
+                </select>
+                </div>
+            </section>
+
+            <section>
+                <label class="title">What do you want to order?</label>
+                <div class="items">
+                    <div>
+                        <label for="cake">Cake</label>
+                        <input class="amount" placeholder="amount" type="number" />
+                        <input class="description" placeholder="description" type="text-box">
+                    </div>
+                    <div>
+                        <label for="cupcake">Cupcake</label>
+                        <input class="amount" placeholder="amount" type="number" />
+                        <input class="description" placeholder="description" type="text-box">
+                    </div>
+                    <div>
+                        <label for="cookie">Big cookie</label>
+                        <input class="amount" placeholder="amount" type="number" />
+                        <input class="description" placeholder="description" type="text-box">
+                    </div>
+                    <div>
+                        <label for="cake">Small cookies</label>
+                        <input class="amount" placeholder="amount" type="number" />
+                        <input class="description" placeholder="description" type="text-box">
+                    </div>
+                </div>
+            </section>
+
+            <div>
+                <input type="checkbox" name="" id="agree">
+                <label for="agree">I am interested in a delivery (50 N.I.S.)</label>
+            </div>
+
+            <section class="form_of_payment">
+                <div class="title">How do you want to pay?</div>
+                <div class="cr_cr">
+                    <label for="credit_card" class="crcr_label">Credit Card</label>
+                    <input id="credit_card" type="radio" class="crcr_input" />
+                    <div class="credit_card">
+                        <input type="text" placeholder="company" id="company">
+                        <input type="text" placeholder="number" id="number">
+                    </div>
+                </div>
+                </div>
+
+                <div>
+                    <input id="Cheque" type="radio" />
+                    <label for="Cheque">Cheque</label>
+                </div>
+
+                <div>
+                    <input id="Cash" type="radio" />
+                    <label for="Cash">Cash</label>
+                </div>
+            </section>
+            <input class="order" type="submit" value="order">
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>

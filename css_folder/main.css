@@ -1,0 +1,131 @@
+body {
+    font-size: 16px;
+    size: 16px;
+    background-image: linear-gradient(pink, lightgreen, gold, pink, lightgreen, gold);
+  }
+.nav{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+  }
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0px 20px;
+    border-radius: 20px;
+  }
+.logo_place {
+  display: inline;
+  float:left;
+  }
+.links_place{
+   display:inline;
+  float: right;
+  font-size: 1.2rem;
+  }
+.block {
+   display: block;
+    height: 150px;
+    margin-top: 50px;
+  }
+.links_place a {
+   text-decoration: none;
+   color: black;
+   background-color: rgb(175, 160, 160);
+   border-radius: 20px;
+   padding: 10px;
+   display: block;
+   margin: 20px 10px 10px 0;
+   text-align: center;
+  }
+.logo {
+  width: 240px;
+    height: 240px;
+  margin-top: 0rem !important; 
+  }
+.indented {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  }
+#poem {
+    position: relative;
+    font-family: Bellota;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 70px;
+  }
+#reviews {
+    position: relative;
+    font-family: Bellota;
+    font-size: 1rem;
+    margin: 5% 20%;
+  }
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+h3 {
+    font-size: 2rem !important;
+  }
+label {
+    cursor: pointer;
+    display: block;
+    font-family: Bellota; 
+  }
+label::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 16px solid black;
+    border-top: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+  }
+input[type="checkbox"]:checked ~ label::before {
+    border-left: 16px solid transparent;
+    border-top: 16px solid black;
+    border-right: 16px solid transparent;
+  }
+ul {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 3rem;
+    transition: max-height 0.4s ease;
+    font-size: 2rem;
+    font-family: Bellota;
+  }
+input[type="checkbox"]:checked ~ ul {
+    max-height: 1280px;
+  }
+p {
+    font-size: 40px !important;
+    margin: 50px 200px;
+  }
+#videos {
+    text-align: center;
+  }
+  video {
+    width: 400px;
+    height: 400px;
+  }
+  #links_addresses {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0px;
+  }
+
+
